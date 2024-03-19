@@ -32,14 +32,25 @@ public class Main {
 
         //EX03
 
-        int[]vetor= new int[1000];
+  /*      int[]vetor= new int[1000];
         for (int cont=0;cont< vetor.length;cont++){
             vetor[cont] = random.nextInt(101);
         }
         for (int i=1;i<=2;i++) {
             ThreadVetor threadVetor = new ThreadVetor(i, vetor);
             threadVetor.start();
+        }*/
+
+
+        //EX04
+
+        for (int cont=1;cont<= 5;cont++){
+            Corrida corrida = new Corrida(cont);
+            corrida.start();
         }
+
+
+
 
     }
 }
